@@ -1,0 +1,15 @@
+clc
+clear all
+close all
+
+fs = 42000;
+
+t = 0:1/fs:1;
+f = 5;
+A = 3;
+
+y = A*sin(t*2*pi*f);
+
+%plot(t, y)
+
+sound(y, fs)
