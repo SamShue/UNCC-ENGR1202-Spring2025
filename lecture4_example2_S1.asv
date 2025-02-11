@@ -1,0 +1,18 @@
+clc
+clear all
+close all
+clear sound
+
+[y, Fs] = loadCorruptedAudio("music1.mp3");
+
+plot(y)
+
+Y = fft(y);
+
+Y
+
+figure
+plot(abs(Y))
+
+
+%sound(y, Fs)
